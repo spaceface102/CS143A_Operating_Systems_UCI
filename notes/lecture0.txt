@@ -1,0 +1,24 @@
+---Lecture 0
+
+--This course
+-inspired by MIT 6.828
+-will be studying the xv6 operating system
+    -around 9k lines of code, definitely a lot smaller
+        than most other operating systems
+    -xv6 also has a book
+    -and source code printout (look at the lecture slides
+        for the link to the book and the printout)
+        -an index of all the system calls and functions
+            in the source code for the operating system
+    -xv6 is a unix like operating systems
+
+--Tips
+-read the fucking source code of xv6
+    -it will allow you to really understand 
+        what the fuck is going operating
+
+--Run the hello world kernel
+-its on github
+-woah, you can run the whole operating system on bare metal
+    -prof flashed a usb and inserted to an old laptop and ran
+        a basic kernel!!!!!! HOLY COW
