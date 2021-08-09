@@ -1,0 +1,34 @@
+---Introduction
+
+--Why do we need an operating system
+
+--How do computers work?
+-threads are logical cores
+    -more than one thread allows you to get closer to
+        saturating the full actual core
+        (thats why we have multi threading)
+    -it seems that each hyper thread has their own
+        set of registers, which will allow to dictate what
+        compute is being completed
+-the operating sees each thread a single cores
+    -to the operating system there is not much difference between
+        a core and a logical thread
+-cpu is connected to DRAM with a memory bus
+    -load and store operating (load gets memory from RAM into the
+        cpu registers and store is the opposite)
+
+--Important registers
+-instruction register/pointer (%rip, %eip)
+-during the execution stage, the cpu has the ability to raise
+    an exception to signify something has gone wrong
+    -ex. the user is trying to divide by 0, since there is
+        no valid logic for said operation, an exception is raised
+    -ex. memory is not mapped, there is a page fault, etc.
+    -I am pretty sure this is not a software exception, but
+        a lower level, hardware based exception
+-for this class we need to be aware that a cpu goes about
+    doing its work through Fetching, Decoding, Reading, and Executing
+-assuming we don't have a jump, what is done after executing an instruction
+    is to increment RIP (or EIP on 32 bit x86 machines) by the size of the
+    current instruction
+-for example 
